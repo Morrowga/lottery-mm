@@ -26,8 +26,9 @@ class Twod
             foreach($number as $num){
                 if(strlen($num) === 2){
                     array_push($res,strrev($num));
-                } 
-                throw new \ErrorException("Expected string length is 2". strlen($num) ." given");
+                } else {
+                    throw new \ErrorException("Expected string length is 2.  ". strlen($num) ."  given");
+                }
             }
             return response()->json([ "reverse_data" => $res ]);
         } else {

@@ -289,5 +289,20 @@ class Threed
         }
     }
        
-
+    public function tookBolean($num,$lucky){
+        $split = str_split($num);
+        if(str_contains($lucky, $split[0])){
+            if(str_contains($lucky, $split[1])){
+                if(str_contains($lucky, $split[2])){
+                    return response()->json(true);
+                } else {
+                    return response()->json(false);
+                }
+            } else {
+                return response()->json(false);
+            }
+        } else {
+            return response()->json(false);
+        }
+    }
 }
