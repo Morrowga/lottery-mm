@@ -1,0 +1,20 @@
+{
+    "name": "lottery/lottery_mm",
+    "description": "ayaytaw pone aung ya myee!",
+    "type": "metapackage",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/", 
+            "Lottery\\Twod\\": "lottery/lottery_mm/src",
+            "Lottery\\Threed\\": "lottery/lottery_mm/src"
+        }
+    },
+    "authors": [
+        {
+            "name": "thihaeung"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
